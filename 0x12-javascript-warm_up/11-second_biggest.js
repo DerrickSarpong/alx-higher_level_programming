@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 
 let second;
 let first;
@@ -18,8 +18,3 @@ for (let i = 4; i < process.argv.length; i++) {
   const curr = parseInt(process.argv[i]);
   if (curr > first) {
     second = first;
-  } else if (curr > second && curr < first) {
-    second = curr;
-  }
-}
-console.log(second);
